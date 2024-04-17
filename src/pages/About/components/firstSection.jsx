@@ -11,7 +11,7 @@ export const FirstSectionAbout = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://api.alquran.cloud/v1/surah/${surahNumber}`)
+                const response = await axios.get(`https://api.alquran.cloud/v1/surah/${surahNumber}`)
                 const data = await response.data
                 // console.log(response);
                 // console.log(data.data);
