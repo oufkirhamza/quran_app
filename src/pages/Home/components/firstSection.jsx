@@ -12,7 +12,7 @@ export const FirstSection = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://api.alquran.cloud/v1/surah")
+                const response = await axios.get("https://api.alquran.cloud/v1/surah")
                 const data = await response.data
                 setSuwar(data.data)
             } catch (error) {
